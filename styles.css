@@ -1,0 +1,30 @@
+body{
+  background:#0087F1;  
+}
+
+body, button{
+  font-family:'Press Start 2P', sans-serif;
+  line-height:1.625;
+  letter-spacing:2px;
+}
+
+button{
+  height:auto;  
+}
+
+.site-header{
+  text-align: center;
+  padding:1rem;
+  color:#fff;
+  text-shadow: 2px 2px 0 black;
+}
+
+.button-samples{
+  display:grid;
+  min-height:50vh;
+  grid-gap:1rem;
+  box-sizing:border-box;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;  
+  padding:2rem;
+}
