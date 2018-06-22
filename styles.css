@@ -1,5 +1,6 @@
 body{
-  background:#0087F1;  
+  background:#000725;
+  font-size:16px;
 }
 
 body, button{
@@ -9,22 +10,96 @@ body, button{
 }
 
 button{
-  height:auto;  
+  height:auto;
+}
+
+.header{
+  background:#000725;
+  text-align: center;
+  color:#fff;
+  padding:4rem 0;
+  border-bottom: 1px solid #78c8e8;
+  display:flex;
+  align-items: center;
+  min-height:50vh;
+}
+
+.header-button{
+  background: #0087F1;
+  color:#fff;
+  padding:.5rem 1rem;
+  border-radius:1rem;
+  font-family:'Montserrat', sans-serif;
+  text-decoration: none;
+  line-height:1;
+  font-size:.875rem;
+  flex:1;
+  margin:.5rem .5rem;
+  white-space: nowrap;
+}
+
+.button-group{
+  display:flex;
+  max-width:430px;
+  margin:1.5rem auto;
+  flex-wrap: wrap;
 }
 
 .site-header{
   text-align: center;
   padding:1rem;
+  font-size:2rem;
   color:#fff;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 2px 2px 0 #0087F1;
 }
 
-.button-samples{
+.site-description{
+  font-family:'Montserrat', sans-serif;
+  font-weight:400;
+  max-width:450px;
+  margin:auto;
+}
+
+.section{
+  padding:3rem 2rem;
+}
+
+.section-content{
+  max-width:800px;
+  margin:auto;
+}
+
+.section-header{
+  padding-bottom:1rem;
+  text-align: center;
+  color:#fff;
+  text-shadow: 2px 2px 0 #000725;
+}
+
+.example-section{
+  background:#0087F1;
+}
+
+.button-examples{
   display:grid;
-  min-height:50vh;
+  min-height:60vh;
   grid-gap:1rem;
   box-sizing:border-box;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;  
-  padding:2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+}
+
+.footer{
+  text-align:center;
+  font-family:'Montserrat', sans-serif;
+  color:#fff;
+  text-align: center;
+  color:#fff;
+  border-top: 1px solid #78c8e8;
+}
+
+.footer a{
+  text-decoration:underline;
+  color:#fff;
+  text-decoration-style: dotted;
 }
