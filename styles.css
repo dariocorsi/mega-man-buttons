@@ -18,14 +18,13 @@ button{
   text-align: center;
   color:#fff;
   padding:4rem 0;
-  border-bottom: 1px solid #78c8e8;
+  border-bottom: 2px solid #78c8e8;
   display:flex;
   align-items: center;
   min-height:50vh;
 }
 
 .header-button{
-  background: #0087F1;
   color:#fff;
   padding:.5rem 1rem;
   border-radius:1rem;
@@ -36,6 +35,36 @@ button{
   flex:1;
   margin:.5rem .5rem;
   white-space: nowrap;
+  box-sizing: border-box;
+  border:2px solid transparent;
+}
+
+.header-button::-moz-focus-inner {
+  border: none;
+}
+
+.header-button.outlined-button{
+  color:#fff;
+  border-color:#0087F1;
+  background:transparent;
+}
+
+.header-button.filled-button{
+  background: #0087F1;
+}
+
+.header-button.outlined-button:focus,
+.header-button.filled-button:focus{
+  border-color:#fff;
+  outline:none;
+}
+
+.header-button.filled-button:hover{
+  background:#2FA1FB;
+}
+
+.header-button.outlined-button:hover{
+  border-color:#2FA1FB;
 }
 
 .button-group{
@@ -50,13 +79,16 @@ button{
   padding:1rem;
   font-size:2rem;
   color:#fff;
-  text-shadow: 2px 2px 0 #0087F1;
+  word-spacing: -.5em;
+  text-shadow:
+    1px 1px 0 #0087F1,
+    2px 2px 0 #0087F1;
 }
 
 .site-description{
   font-family:'Montserrat', sans-serif;
   font-weight:400;
-  max-width:450px;
+  max-width:480px;
   margin:auto;
 }
 
@@ -95,7 +127,7 @@ button{
   color:#fff;
   text-align: center;
   color:#fff;
-  border-top: 1px solid #78c8e8;
+  border-top: 2px solid #78c8e8;
 }
 
 .footer a{
